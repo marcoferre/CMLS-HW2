@@ -50,7 +50,9 @@ void Filter::paint (Graphics& g)
 
     g.setColour(Colours::grey);
     g.drawRoundedRectangle(area, 20.0f, 2.0f);
-
+    g.setColour(Colours::white);
+    g.drawText("cutoff", 30, 150, 70, 20, Justification::centredTop);
+    g.drawText("resonance", 100, 150, 70, 20, Justification::centredTop);
 }
 
 void Filter::resized()
@@ -59,5 +61,4 @@ void Filter::resized()
 
     filterCutoff.setBounds(30, 70, 70, 70);
     filterRes.setBounds(100, 70, 70, 70);
-
 }

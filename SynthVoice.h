@@ -102,19 +102,6 @@ class SynthVoice : public SynthesiserVoice
 
         //===========================================
 
-        void pitchWheelMoved(int newPitchWheelValue) override
-        {
-            
-        }
-        //===========================================
-
-        void controllerMoved(int controllerNumber, int newControllerValue) override
-        {
-
-        }
-
-        //===========================================
-
         void renderNextBlock(AudioBuffer <float>& outputBuffer, int startSample, int numSamples) override
         {
             for (int sample = 0; sample < numSamples; ++sample)
